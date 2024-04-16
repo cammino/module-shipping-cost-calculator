@@ -101,6 +101,10 @@ class Data extends AbstractHelper
      */
     protected $defaultShippingAdderss = null;
 
+    protected $urlBuilder = null;
+    protected $mediaUrl = null;
+    protected $country = null;
+
 
     /**
      * __construct Helper Data
