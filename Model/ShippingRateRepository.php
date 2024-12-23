@@ -154,7 +154,7 @@ class ShippingRateRepository implements ShippingRateRepositoryInterface
         $quote->addItem($item);
         $shipping_data = $request->getShippingData();
         $shippingAddress = $quote->getShippingAddress();
-        if (is_array($variable)) {
+        if (is_array($shipping_data)) {
             $shippingAddress->addData($shipping_data);
         } else {
             $shippingAddress->addData($shipping_data->__toArray());
